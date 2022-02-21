@@ -1,0 +1,62 @@
+/* 参考：https://saruwakakun.com/html-css/reference/box */
+
+
+body {
+    background: #faf0e6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.box2 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-425px; /*widthの半分にする*/
+    margin-top:-200px;/*heightの半分にする*/
+
+    padding-left:8px;
+    padding-right:8px;
+    padding-top:8px;
+
+    width:850px;
+    height:400px;
+    background-color:#FFFFFF;
+}
+
+.box2 p {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform : translate(-50%,-50%);
+}
+
+.big { font-size:60pt;
+    color:#ffa500;
+}
+
+.btn-square-pop {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #fd9535;/*背景色*/
+    border-bottom: solid 2px #d27d00;/*少し濃い目の色に*/
+    border-radius: 4px;/*角の丸み*/
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+    font-weight: bold;
+}
+
+.btn-square-pop:active {
+    border-bottom: solid 2px #fd9535;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
