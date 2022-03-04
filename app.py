@@ -7,7 +7,6 @@ import pandas as pd
 import readFelica
 import accessDB
 import autoLogin
-import sendMail
 
 #このファイル全体で使用するキャンパスペイの情報
 canpaspay = readFelica.MyCanpasPay()
@@ -50,8 +49,7 @@ def getNextPageFromJavascript():
 
         # メールアドレスの取得
         mailAddress = autoLogin.getMailAddress(id,password)
-        sendMail.sendMail(mailAddress)
-
+    
         print(ranking)
 
         canpaspay.setBalance(balance)
